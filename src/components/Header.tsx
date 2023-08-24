@@ -18,7 +18,7 @@ export default function Header() {
           <span className="">
             <i
               className={`fa-solid fa-bars text-xl text-orange-900 cursor-pointer ${menuIcon.bars}`}
-              onClick={(e) => {
+              onClick={() => {
                 setViewNav("visible");
                 setMenuIcon({
                   bars: "hidden",
@@ -28,7 +28,7 @@ export default function Header() {
             ></i>
             <i
               className={`fa-solid fa-xmark text-xl text-orange-900 cursor-pointer ${menuIcon.xmark}`}
-              onClick={(e) => {
+              onClick={() => {
                 setViewNav("hidden");
                 setMenuIcon({
                   bars: "visible",
