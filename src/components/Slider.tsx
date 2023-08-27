@@ -7,15 +7,15 @@ export default function Slider() {
       caption: "Church Festival",
     },
     {
-      img: "/src/assets/img/slider/img2.jpg",
+      img: "https://ik.imagekit.io/netmaze/rcchurch/slider/img2.jpg",
       caption: "Seminar",
     },
     {
-      img: "/src/assets/img/slider/img3.jpg",
+      img: "https://ik.imagekit.io/netmaze/rcchurch/slider/img3.jpg",
       caption: "Seminar",
     },
     {
-      img: "/src/assets/img/slider/img4.jpg",
+      img: "https://ik.imagekit.io/netmaze/rcchurch/slider/img4.jpg",
       caption: "Travelling",
     },
   ];
