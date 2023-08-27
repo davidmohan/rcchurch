@@ -1,66 +1,77 @@
 import { useState } from "react";
 
 export default function Header() {
-  const [viewNav, setViewNav] = useState("visible");
-  const [menuIcon, setMenuIcon] = useState({
-    bars: "visible",
-    xmark: "hidden",
-  });
-
+  const [smNav, setSmNav] = useState(false);
   return (
     <>
-      <nav
-        className="w-full h-screen flex flex-col justify-start items-center py-6 bg-gray-100 md:flex-row md:h-auto
-      "
-      >
-        <div className="w-2/3 flex justify-between">
-          <span className="font-bold text-xl text-orange-900">RC CHURCH</span>
-          <span className="">
+      <div className="sm:flex sm:justify-center sm:items-center sm:py-5 hidden sm:block bg-gray-200">
+        <span className="px-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+          Home
+        </span>
+        <span className="px-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+          About
+        </span>
+        <span className="px-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+          Priests
+        </span>
+        <span className="px-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+          Our Services
+        </span>
+        <span className="px-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+          Media
+        </span>
+        <span className="px-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+          Contact
+        </span>
+      </div>
+      <div className="sm:hidden flex-col justify-center w-full relative">
+        <div className="flex justify-around w-full bg-gray-200 py-5">
+          <span className="text-orange-800 uppercase text-xl font-bold">
+            RC Church
+          </span>
+          <span className="text-orange-800 text-xl cursor-pointer">
             <i
-              className={`fa-solid fa-bars text-xl text-orange-900 cursor-pointer ${menuIcon.bars}`}
+              className={"fa-solid fa-bars " + (smNav ? "hidden" : "block")}
               onClick={() => {
-                setViewNav("visible");
-                setMenuIcon({
-                  bars: "hidden",
-                  xmark: "visible",
-                });
+                setSmNav(!smNav);
               }}
             ></i>
             <i
-              className={`fa-solid fa-xmark text-xl text-orange-900 cursor-pointer ${menuIcon.xmark}`}
+              className={"fa-solid fa-xmark " + (!smNav ? "hidden" : "block")}
               onClick={() => {
-                setViewNav("hidden");
-                setMenuIcon({
-                  bars: "visible",
-                  xmark: "hidden",
-                });
+                setSmNav(!smNav);
               }}
             ></i>
           </span>
         </div>
         <div
-          className={`h-screen flex flex-col justify-center items-center md:flex-row md:h-auto ${viewNav}`}
+          className={
+            "flex flex-col items-center py-8 bg-white w-full " +
+            (smNav ? "block" : "hidden")
+          }
         >
-          <span className="mx-5 uppercase text-orange-800 transition-all hover:text-orange-950 cursor-pointer py-4 text-xl md:text-sm md:py-2">
-            Home
-          </span>
-          <span className="mx-5 uppercase text-orange-800 transition-all hover:text-orange-950 cursor-pointer py-4 text-xl md:text-sm md:py-2">
-            About
-          </span>
-          <span className="mx-5 uppercase text-orange-800 transition-all hover:text-orange-950 cursor-pointer py-4 text-xl md:text-sm md:py-2">
-            Priests
-          </span>
-          <span className="mx-5 uppercase text-orange-800 transition-all hover:text-orange-950 cursor-pointer py-4 text-xl md:text-sm md:py-2">
-            Our Services
-          </span>
-          <span className="mx-5 uppercase text-orange-800 transition-all hover:text-orange-950 cursor-pointer py-4 text-xl md:text-sm md:py-2">
-            Media
-          </span>
-          <span className="mx-5 uppercase text-orange-800 transition-all hover:text-orange-950 cursor-pointer py-4 text-xl md:text-sm md:py-2">
-            Contact
-          </span>
+          <div className="flex flex-col items-center py-8">
+            <span className="px-3 py-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+              Home
+            </span>
+            <span className="px-3 py-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+              About
+            </span>
+            <span className="px-3 py-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+              Priests
+            </span>
+            <span className="px-3 py-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+              Our Services
+            </span>
+            <span className="px-3 py-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+              Media
+            </span>
+            <span className="px-3 py-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+              Contact
+            </span>
+          </div>
         </div>
-      </nav>
+      </div>
     </>
   );
 }
