@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function Slider() {
   const data = [
     {
-      img: "/public/slider/img1.jpg",
+      img: "https://ik.imagekit.io/netmaze/rcchurch/slider/img1.jpg",
       caption: "Church Festival",
     },
     {
