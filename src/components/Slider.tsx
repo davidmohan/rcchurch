@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function Slider() {
   const data = [
     {
-      img: "/src/assets/img/slider/img1.jpg",
+      img: "/public/slider/img1.jpg",
       caption: "Church Festival",
     },
     {
