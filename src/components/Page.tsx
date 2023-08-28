@@ -1,3 +1,4 @@
+import Events from "./Events";
 import Header from "./Header";
 import Priests from "./Priests";
 import Quotes from "./Quotes";
@@ -12,6 +13,7 @@ export default function Page() {
       <Welcome />
       <Priests />
       <Quotes />
+      <Events />
     </>
   );
 }
