@@ -4,7 +4,7 @@ export default function Header() {
   const [smNav, setSmNav] = useState(false);
   return (
     <>
-      <div className="sm:flex sm:justify-center sm:items-center sm:py-5 hidden sm:block bg-gray-200">
+      <div className="sm:flex sm:justify-center sm:items-center sm:py-6 hidden sm:block bg-gray-200">
         <span className="px-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
           Home
         </span>
