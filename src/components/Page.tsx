@@ -1,3 +1,4 @@
+import Anbiyams from "./Anbiyams";
 import Events from "./Events";
 import Header from "./Header";
 import Priests from "./Priests";
@@ -14,6 +15,7 @@ export default function Page() {
       <Priests />
       <Quotes />
       <Events />
+      <Anbiyams />
     </>
   );
 }

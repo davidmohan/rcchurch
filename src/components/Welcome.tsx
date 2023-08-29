@@ -30,7 +30,7 @@ export default function Welcome() {
                   <i className="fa-solid fa-xmark"></i>
                 </Dialog.Close>
               </span>
-              <p className="text-justify h-96 overflow-y-scroll">
+              <p className="text-justify h-96 overflow-y-scroll pr-3 text-sm">
                 மரியானூஸ் நகர் தூய ஆரோக்கிய அன்னை ஆலயத் திருவிழா 28.09.2021 ஆகிய
                 இன்று கொடியேற்றத்துடன் ஆரம்பமாகிறது.. ஆகவே ஏற்கனவே பதிவு
                 செய்யப்பட்ட இவ்வாலயத்தை மீண்டும் ஒருமுறை பதிவு செய்கின்றோம்...
