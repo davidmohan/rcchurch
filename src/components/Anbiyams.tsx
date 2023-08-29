@@ -1,7 +1,6 @@
 import * as Dialog from "@radix-ui/react-dialog";
-import { useState } from "react";
 export default function Anbiyams() {
-  const [data, setData] = useState([
+  const data = [
     {
       anbiyamImg: "https://ik.imagekit.io/netmaze/rcchurch/Alphonsa.jpg",
       anbiyamName: "St. Alphonsa Anbiyam",
@@ -60,7 +59,7 @@ export default function Anbiyams() {
       anbiyamAbout:
         "St Sebastian was an early Christian saint and martyr. According to traditional belief, he was killed during the Roman emperor Diocletian's persecution of Christians. He is commonly depicted in art and literature tied to a post or tree and shot with arrows. He is venerated in the Roman Catholic Church and the Orthodox Church. Saint Sebastian is a popular male saint, especially among athletes.",
     },
-  ]);
+  ];
   return (
     <>
       <div className="flex flex-col justify-center items-center py-10 space-y-10">

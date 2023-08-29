@@ -1,7 +1,5 @@
-import { useState } from "react";
-
 export default function Events() {
-  const [data, setData] = useState([
+  const data = [
     {
       eventImg: "https://ik.imagekit.io/netmaze/rcchurch/events/prayer-1.jpg",
       eventName: "மாதத்தின் முதல் ஞாயிறு",
@@ -40,7 +38,7 @@ export default function Events() {
       location:
         "தூய ஆரோக்கிய அன்னை ஆலயம், மரியானுஸ் நகர், சிவகாசி மேற்கு அஞ்சல்",
     },
-  ]);
+  ];
 
   return (
     <>
