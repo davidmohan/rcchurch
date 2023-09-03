@@ -4,7 +4,7 @@ export default function Footer() {
   };
   return (
     <>
-      <div className="w-full max-sm:h-screen bg-orange-950 text-white flex max-sm:flex-col py-10 sm:py-20 px-10 justify-between">
+      <div className="w-full bg-orange-950 text-white flex max-sm:flex-col py-10 sm:py-20 px-10 justify-between">
         <div className="flex flex-col space-y-5 max-sm:py-10 sm:w-1/3">
           <span className="text-2xl font-bold">Contact Details</span>
           <div className="flex flex-col">
