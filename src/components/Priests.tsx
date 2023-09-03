@@ -1,7 +1,10 @@
 export default function Priests() {
   return (
     <>
-      <div className="w-full h-screen flex flex-col justify-center items-center bg-blue-200">
+      <div
+        className="w-full h-screen flex flex-col justify-center items-center bg-blue-200"
+        id="priests"
+      >
         <span className="text-blue-950 text-2xl font-bold outline-blue-500 max-sm:mb-8">
           Our Priests
         </span>

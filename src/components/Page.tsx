@@ -10,9 +10,10 @@ import Welcome from "./Welcome";
 export default function Page() {
   return (
     <>
-      <Header />
       <Slider />
+      {/* <div id="welcome"> */}
       <Welcome />
+      {/* </div> */}
       <Priests />
       <Quotes />
       <Events />

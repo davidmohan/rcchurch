@@ -1,28 +1,50 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [smNav, setSmNav] = useState(false);
   return (
     <>
-      <div className="sm:flex sm:justify-center sm:items-center sm:py-6 hidden sm:block bg-gray-200">
-        <span className="px-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+      <div
+        className="sm:flex sm:justify-center sm:items-center sm:py-6 hidden sm:block bg-gray-200"
+        id="home"
+      >
+        <a
+          href={"#home"}
+          className="px-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all"
+        >
           Home
-        </span>
-        <span className="px-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+        </a>
+        <a
+          href={"#welcome"}
+          className="px-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all"
+        >
           About
-        </span>
-        <span className="px-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+        </a>
+        <a
+          className="px-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all"
+          href={"#priests"}
+        >
           Priests
-        </span>
-        <span className="px-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+        </a>
+        <a
+          className="px-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all"
+          href={"#events"}
+        >
           Our Services
-        </span>
-        <span className="px-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+        </a>
+        <a
+          className="px-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all"
+          href={"#media"}
+        >
           Media
-        </span>
-        <span className="px-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+        </a>
+        <a
+          className="px-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all"
+          href={"#footer"}
+        >
           Contact
-        </span>
+        </a>
       </div>
       <div className="sm:hidden flex-col justify-center w-full relative">
         <div className="flex justify-around w-full bg-gray-200 py-5">
@@ -51,24 +73,42 @@ export default function Header() {
           }
         >
           <div className="flex flex-col items-center py-8">
-            <span className="px-3 py-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+            <a
+              className="px-3 py-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all"
+              href="#home"
+            >
               Home
-            </span>
-            <span className="px-3 py-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+            </a>
+            <a
+              className="px-3 py-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all"
+              href="#welcome"
+            >
               About
-            </span>
-            <span className="px-3 py-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+            </a>
+            <a
+              className="px-3 py-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all"
+              href="#priests"
+            >
               Priests
-            </span>
-            <span className="px-3 py-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+            </a>
+            <a
+              className="px-3 py-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all"
+              href="#events"
+            >
               Our Services
-            </span>
-            <span className="px-3 py-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+            </a>
+            <a
+              className="px-3 py-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all"
+              href="#media"
+            >
               Media
-            </span>
-            <span className="px-3 py-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all">
+            </a>
+            <a
+              className="px-3 py-3 uppercase text-orange-800 hover:text-orange-950 cursor-pointer transition-all"
+              href="#footer"
+            >
               Contact
-            </span>
+            </a>
           </div>
         </div>
       </div>

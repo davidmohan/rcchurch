@@ -36,7 +36,7 @@ export default function Slider() {
   };
   return (
     <>
-      <div className="w-full flex justify-center sm:py-6">
+      <div className="w-full flex justify-center sm:py-6" id="slider">
         <div className="w-full  sm:w-3/4 relative  sm:rounded-xl sm:overflow-hidden">
           <img
             src={data[count].img}

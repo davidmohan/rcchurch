@@ -3,7 +3,10 @@ import * as Dialog from "@radix-ui/react-dialog";
 export default function Welcome() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center py-10 sm:px-32 sm:py-20 px-5">
+      <div
+        className="flex flex-col items-center justify-center py-10 sm:px-32 sm:py-20 px-5"
+        id="welcome"
+      >
         <span className="text-2xl sm:text-3xl py-5">
           Welcome to <span className="font-bold">Our Church</span>
         </span>

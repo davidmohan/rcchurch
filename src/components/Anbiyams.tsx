@@ -62,7 +62,10 @@ export default function Anbiyams() {
   ];
   return (
     <>
-      <div className="flex flex-col justify-center items-center py-10 space-y-10">
+      <div
+        className="flex flex-col justify-center items-center py-10 space-y-10"
+        id="anbiyams"
+      >
         <span className="text-3xl uppercase font-bold">Anbiyams</span>
         <div className="w-10/12 max-sm:space-y-5 sm:space-x-5 flex flex-wrap justify-center">
           {data.map((anbiyam: any) => (

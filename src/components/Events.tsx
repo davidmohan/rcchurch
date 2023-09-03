@@ -42,7 +42,10 @@ export default function Events() {
 
   return (
     <>
-      <div className="w-full py-20 flex flex-col justify-center items-center bg-gray-100 space-y-10">
+      <div
+        className="w-full py-20 flex flex-col justify-center items-center bg-gray-100 space-y-10"
+        id="events"
+      >
         <span className="font-bold text-3xl">News & Events</span>
         <div className="w-11/12 flex flex-col items-center justify-center space-y-5">
           {data.map((event: any, index: number) => (
